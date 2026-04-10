@@ -5,7 +5,7 @@ import com.parkingapp.service.*;
 
 import java.util.Scanner;
 
-public class Main {
+public class ParkingSystemRunner {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
