@@ -1,4 +1,4 @@
-package com.parkingapp;
+package com.parkingapp.model;
 
 public enum ReservationStatus {
     ACTIVE,
