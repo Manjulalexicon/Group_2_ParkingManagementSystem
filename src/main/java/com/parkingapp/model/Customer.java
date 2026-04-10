@@ -1,4 +1,7 @@
-package model;
+//package model;
+//changed to correct package name by Manjula
+package com.parkingapp.model;
+
 //Stores customer details and their associated Vehicle.
 public class Customer {
         private String name;
@@ -45,4 +48,4 @@ public class Customer {
                     '}';
         }
     }
-}
+

@@ -1,23 +1,27 @@
-package model;
+//package model;
+//changed to correct package name by Manjula
+package com.parkingapp.model;
 //Represents a parking spot with ID and availability status.
 
 public class ParkingSpot {
 
 
-        private String spotId;
+        private int  spotId;
         private boolean isAvailable;
 
 
-    public ParkingSpot(String spotId, boolean isAvailable) {
+    public ParkingSpot(int spotId) {
         this.spotId = spotId;
-        this.isAvailable = isAvailable;
+        //isAvailable value set as true by Manjula
+        //this.isAvailable = isAvailable;
+        this.isAvailable = true;
     }
 
-    public String getSpotId() {
+    public int getSpotId() {
         return spotId;
     }
 
-    public void setSpotId(String spotId) {
+    public void setSpotId(int spotId) {
         this.spotId = spotId;
     }
 
@@ -25,9 +29,19 @@ public class ParkingSpot {
         return isAvailable;
     }
 
-    public void setAvailable(boolean available) {
-        isAvailable = available;
-    }
+//    public void setAvailable(boolean available) {
+//        isAvailable = available;
+//    }
+    //Added a method for Occupy and vacate
+        public void occupy() {
+            this.isAvailable = false;
+        }
+
+            public void vacate() {
+                this.isAvailable = true;
+            }
+
+
 
     @Override
     public String toString() {
